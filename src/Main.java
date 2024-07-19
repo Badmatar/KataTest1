@@ -62,10 +62,8 @@ public class Main {
         if (Arabic) {
             return String.valueOf(arabicCalc(a, b, action));
         } else {
-            System.exit(1);
+            throw new InputException("Операнды должны быть положительными числами");
         }
-
-        return null;
     }
 
     // Метод для преобразования результата римского вычисления в строку
